@@ -1,0 +1,72 @@
+<template>
+    <lightning-card title="Import Fielo Configurations" icon-name="utility:download">
+        <lightning-layout multiple-rows="true" class="slds-p-around_medium">
+            <lightning-layout-item size="3" class="slds-p-horizontal_medium">
+                <b>Please note:</b>
+                <ul class="slds-list_dotted">
+                    <li>The import process has a 60-second time limit. If it goes over 60 seconds, it will fail.</li>
+                    <li>The metadata must be the same between the source org and the destination org.</li>
+                    <li>The Libraries must be the same between the source org and the destination org (including versions).</li>
+                    <li>You must validate your file before you import it.</li>
+                </ul>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" class="slds-p-horizontal_medium slds-p-top_small">
+                <lightning-input type="file" label="JSON file" onchange={readFile}></lightning-input>
+            </lightning-layout-item>
+            <template if:true={fileName}>
+                <lightning-layout-item size="12" class="slds-p-horizontal_medium slds-p-top_small">
+                    <b>File:</b> {fileName} <b>Size:</b> {fileSize}
+                </lightning-layout-item>
+            </template>
+            <lightning-layout-item size="12" class="slds-p-horizontal_medium slds-p-top_large">
+                <lightning-button variant="neutral" disabled={disableValidate} label="Validate" title="Import" onclick={handleValidate}></lightning-button>
+                <lightning-button variant="brand" disabled={disableImport} label="Import" title="Import" class="slds-p-left_medium" onclick={handleImport}></lightning-button>
+            </lightning-layout-item>
+            <!-- STATUS -->
+            <lightning-layout-item size="3" class="slds-p-horizontal_medium slds-p-top_large">
+                <lightning-layout horizontal-align="spread" multiple-rows="true" class="slds-box">
+                    <lightning-layout-item size="10" class="fielo-step-header slds-text-body_medium">
+                        {status}
+                    </lightning-layout-item>
+                    <lightning-layout-item>
+                        <template if:true={isProcessing}>
+                            <lightning-progress-ring value={_progress} variant="active-step">
+                            </lightning-progress-ring>
+                        </template>
+                        <template if:false={isProcessing}>
+                            <template if:true={isReady}>
+                                <lightning-icon icon-name="utility:success" class="fielo-success" variant="success" size="small"
+                                    alternative-text="Current" title="Current">
+                                </lightning-icon>
+                            </template>
+                            <template if:false={isReady}>
+                                <lightning-icon icon-name="utility:ban" class="fielo-pending" size="small"
+                                    alternative-text="Current" title="Current">
+                                </lightning-icon>
+                            </template>
+                        </template>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </lightning-layout-item>
+            <!-- OUTPUT -->
+            <template if:true={output}>
+                <lightning-layout-item size="12" class="slds-p-horizontal_medium slds-p-top_large">
+                        Import Request: <lightning-formatted-url value={recordURL} label={importRecord.Name} target="_blank"></lightning-formatted-url> took <b>{duration} ms</b> <!-- and performed <b>{queries} queries</b> --> to process the file.
+                </lightning-layout-item>
+                <lightning-layout-item size="12" class="slds-p-horizontal_medium slds-p-top_large">
+                    <template if:false={showDetails}>
+                        <lightning-button variant="brand" label="Show details" title="Import" onclick={handleShowDetail}></lightning-button>
+                    </template>
+                    <template if:true={showDetails}>
+                        <lightning-button variant="neutral" label="Hide details" title="Import" onclick={handleHideDetail}></lightning-button>
+                    </template>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" class="slds-p-horizontal_medium slds-p-top_large">
+                    <template if:true={showDetails}>
+                        <lightning-textarea name="Output" variant="label-hidden" readonly value={output} label="Result"></lightning-textarea>
+                    </template>
+                </lightning-layout-item>
+            </template>
+        </lightning-layout>
+    </lightning-card>
+</template>

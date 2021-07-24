@@ -1,0 +1,69 @@
+=== Orgs
+     ALIAS                   USERNAME                          ORG ID              CONNECTED STATUS
+───  ──────────────────────  ────────────────────────────────  ──────────────────  ─────────────────────
+                             brdemo@devtiago.com               00D3j000000hNhPEAU  Connected
+                             devtiago@fielodevhub.com          00D4P000000xIWwUAM  Connected
+                             engineering@fielo.com             00D36000000H6slEAC  RefreshTokenAuthError
+                             google@fielodemo.com              00D4P000000hSV6UAM  Connected
+                             tiago@apexcompiler.org            00D3h000006ffYUEAY  Connected
+                             tibeal@wordcloud.com              00D4P000000ibdKUAQ  Connected
+     Cmop                    managedobjects@fielo.org          00D4x0000022URNEA2  Connected
+     alexDemoPIP             alex@smoketestb2b.com             00D4x000005QgD1EAK  Connected
+(U)  asyncImport             devtiago@asyncimport.org          00D5e000002RnsQEAS  Connected
+     cacheTestSetup          cachetestissue@fielo.com          00D5e000000INcKEAW  Connected
+     devHub_tleal            tiago.leal@fielo.com              00D36000000H6slEAC  Connected
+     devTiagoPLT             devtiago@fielo-plt.com            00D50000000JvQwEAK  Connected
+     dwarvenSolution         tibeal@gmail.com                  00D1a000000YkR4EAK  Connected
+     elr-upd-issue           elr@upd-issue.org                 00D4x0000015xpnEAA  Connected
+     etex_prod               etex@fielo.com                    00D4P000000gu48UAA  RefreshTokenAuthError
+     fcache                  fielo.cache@fielo.com             00D5e000000IIxhEAG  Connected
+     googleDemo              productdemo@fielo.com             00D5Y000002SnreUAC  Connected
+     googleDevOrgConsulting  consulting@fielo.com.ic           00D4x0000067VtlEAE  RefreshTokenAuthError
+     gpubsub                 global.pubsub@fielo.com           00D5e000000JwhrEAC  Connected
+     gpubsubtest             global.pubsubtest@fielo.com       00D5e000000JgFeEAK  Connected
+     helloWorldLgt           tibeal-tzs4@force.com             00DB0000000Ea7rMAC  Connected
+     ldv1                    ldv1_master@fielo.com             00DJ0000003HSgXMAW  Connected
+     ldv2                    ldv2_master@fielo.com             00DJ0000003HSghMAG  Connected
+     master-elr              master@fielo-elr.com              00D6A0000001QOFUA2  Connected
+     master-grs              carl.conn@solution.com            00Df4000000kVA8EAM  Connected
+     master-plt              alejandro@fieloplt.com            00D50000000NNP6EAO  Connected
+     master-prp              master@fielo-prp.com              00D46000000ZmEtEAK  Connected
+     master-simulator        pipsimulator@fielo.com            00D4x000007Jb8wEAC  Connected
+     newroots                product@fielodemo.com             00D1H000000MmeUUAS  Connected
+     nsType                  nstype@fielo.com                  00D5Y000002VyqyUAC  Connected
+     patch-elr-1.66          admin@fieloelr_1.66.patch         00D3s000003bdzQEAQ  Connected
+     patch-elr-1.70          admin@fieloelr_1.70.patch         00D6A000003HkaxUAC  Connected
+     patch-elr-1.73          admin@fieloelr_1.73.patch         00D3s000003bdgBEAQ  Connected
+     patch-elr-1.74          admin@fieloelr_1.74.patch         00D3s00000371VGEAY  RefreshTokenAuthError
+     patch-elr-1.76          admin@fieloelr_1.76.patch         00D3s00000371WOEAY  Connected
+     patch-grs-1.10          admin@fielogrs_1.10.patch         00Df4000004nKmoEAE  Connected
+     patch-plt-2.102         admin@fieloplt_2.102.patch        00D2J0000009pHnUAI  Connected
+     patch-plt-2.113         admin@fieloplt_2.113.patch        00D2J0000009pPxUAI  Connected
+     patch-plt-2.114         admin@fieloplt_2.114.patch        00D2J0000009pQMUAY  Connected
+     patch-plt-2.47          admin@fieloplt_2.47.patch         00D50000000K0LfEAK  Connected
+     patch-plt-2.51          admin@fieloplt_2.51.patch         00D50000000OHbWEAW  Connected
+     patch-plt-2.60          admin@fieloplt_2.60.patch         00D2J000000OHxlUAG  Connected
+     patch-plt-2.63          admin@fieloplt_2.63.patch         00D2J0000003OkZUAU  Connected
+     patch-plt-2.69          admin@fieloplt_2.69.patch         00D2J0000003ZKfUAM  Connected
+     patch-plt-2.71          admin@fieloplt_2.71.patch         00D2J0000003ZLiUAM  Connected
+     patch-plt-2.74          admin@fieloplt_2.74.patch         00D2J0000003ZR8UAM  Connected
+     patch-plt-2.88          admin@fieloplt_2.88.patch         00D2J000000BdKkUAK  Connected
+     patch-plt-2.92          admin@fieloplt_2.92.patch         00D2J000000BdM7UAK  Connected
+     patch-plt-2.96          admin@fieloplt_2.96.patch         00D2J0000003ZmiUAE  Connected
+     perfOrg                 tiago.leal@fielo-ldv.com          00DJ0000003SFiWMAW  Connected
+     plt-developer-1         tiago.leal@fieloplt.spring21.org  00D5e000002Fo2MEAS  Connected
+     plt-spring-20           spring20@fielo295.com             00D4x000000KflBEAS  Connected
+     plt-spring-21           spring.21@fielo.org               00D5e0000011F22EAE  Connected
+     plt-summer-22           tiago.leal@fielosummer22.org      00D5e000002Hdl7EAC  Connected
+     sampleGalleryHub        tibeal@samplegallery.com          00D4P000000iTirUAE  Connected
+     spring20devOrg          devtiago@plt-spring20.com         00D3h0000069a9JEAQ  Connected
+     sprint21_tleal          tiago.leal@fieloplt-spring21.org  00D5Y000001dlDKUAY  Connected
+
+  ALIAS           USERNAME                     ORG ID              STATUS  EXPIRATION DATE
+  ──────────────  ───────────────────────────  ──────────────────  ──────  ───────────────
+  batchIssue      devtiago@batchissue.org      00D1D000000L3PuUAK  Active  2021-08-14
+  fieloPTB_4      devtiago@fieloptb_4.org      00D0R000000RQSEUA4  Active  2021-07-28
+  fieloSetup32    devtiago@fielosetup32.org    00D56000000JdG0EAK  Active  2021-08-14
+  fieloSetup33    devtiago@fielosetup33.org    00D0U000000Jw6NUAS  Active  2021-08-14
+  goalCalcIssue   devtiago@goalcalcissue.org   00D1100000CK3llEAD  Active  2021-08-15
+  mdfIntegration  devtiago@mdfintegration.org  00D17000000TERVEA4  Active  2021-08-17
